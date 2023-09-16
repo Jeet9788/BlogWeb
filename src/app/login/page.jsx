@@ -1,11 +1,27 @@
-import React from 'react'
-import styles from "./loginPage.module.css"
+"use client" 
 
-export const page = () => {
+import { useRouter } from "next/navigation";
+import styles from "./loginPage.module.css"
+import { signIn, useSession } from 'next-auth/react'
+
+export const Loginpage = () => {
+
+  const {data , status} = useSession();
+
+  const router = useRouter()
+
+  if(status === "loading"){
+    return <div className={styles.loading}>Loading...</div>
+  }
+  if(status === "authenticated"){
+    router.push("/");
+  }
   return (
     <div className={styles.container}>
         <div className={styles.wrapper}>
-            <div className={styles.socialButton}>Sign in with Google</div>
+            <div className={styles.socialButton} onClick={()=>signIn("google")}>
+              Sign in with Google
+            </div>
             <div className={styles.socialButton}>Sign in with GitHub</div>
             <div className={styles.socialButton}>Sign in with Facebook</div>
         </div>
@@ -13,4 +29,4 @@ export const page = () => {
   )
 }
 
-export default page;
+export default Loginpage;
