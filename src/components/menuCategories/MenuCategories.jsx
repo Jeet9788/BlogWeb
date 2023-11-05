@@ -1,48 +1,33 @@
-import React from 'react'
-import styles from './menuCategories.module.css'
-import Link from 'next/link'
+import Link from "next/link";
+import React from "react";
+import styles from "./menuCategories.module.css";
 
-export const MenuCategories = () => {
+const MenuCategories = () => {
   return (
     <div className={styles.categoryList}>
       <Link
-        href="/blog?cat=style"
-        className={`${styles.categoryItem} ${styles.style}`}
+        href="/blog?cat=gujarat"
+        className={`${styles.categoryItem} ${styles.gujarat}`}
       >
-        Style
+        gujarat
       </Link>
-      <Link
-        href="/blog?cat=style"
-        className={`${styles.categoryItem} ${styles.fashion}`}
-      >
-        Fashion
+      <Link href="/blog" className={`${styles.categoryItem} ${styles.rajasthan}`}>
+        rajasthan
       </Link>
-      <Link
-        href="/blog?cat=style"
-        className={`${styles.categoryItem} ${styles.food}`}
-      >
-        Food
+      <Link href="/blog" className={`${styles.categoryItem} ${styles.mumbai}`}>
+        mumbai
       </Link>
-      <Link
-        href="/blog?cat=style"
-        className={`${styles.categoryItem} ${styles.travel}`}
-      >
-        Travel
+      <Link href="/blog" className={`${styles.categoryItem} ${styles.himachal}`}>
+        himachal
       </Link>
-      <Link
-        href="/blog?cat=style"
-        className={`${styles.categoryItem} ${styles.culture}`}
-      >
-        Culture
+      <Link href="/blog" className={`${styles.categoryItem} ${styles.kerala}`}>
+        kerala
       </Link>
-      <Link
-        href="/blog?cat=style"
-        className={`${styles.categoryItem} ${styles.coding}`}
-      >
-        Coding
+      <Link href="/blog" className={`${styles.categoryItem} ${styles.kashmir}`}>
+        kashmir
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default MenuCategories
+export default MenuCategories;
