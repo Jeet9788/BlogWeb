@@ -1,38 +1,42 @@
-.categoryList{
+.categoryList {
     margin-top: 35px;
     margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.categoryItem{
+  }
+  
+  .categoryItem {
+    flex: 1 1 70px; /* Equal size for each item, adjust 150px to your desired width */
     padding: 10px 10px;
     border-radius: 10px;
     font-size: 14px;
-}
-
-.categoryItem.kashmir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .categoryItem.kashmir {
     background-color: #57c4ff31;
-}
-
-.categoryItem.gujarat{
+  }
+  
+  .categoryItem.gujarat {
     background-color: #da85c731;
-}
-
-.categoryItem.mumbai{
+  }
+  
+  .categoryItem.mumbai {
     background-color: #7fb88133;
-}
-
-.categoryItem.kerala{
+  }
+  
+  .categoryItem.kerala {
     background-color: #ff795736;
-}
-
-.categoryItem.rajasthan{
+  }
+  
+  .categoryItem.rajasthan {
     background-color: #ffb04f45;
-}
-
-.categoryItem.himachal{
+  }
+  
+  .categoryItem.himachal {
     background-color: #5e4fff31;
-}
-
+  }
+  

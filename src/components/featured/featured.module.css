@@ -5,6 +5,8 @@
 .title{
     font-size: 96px;
     font-weight: 300;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 .post{

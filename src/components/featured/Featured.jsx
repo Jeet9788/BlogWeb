@@ -30,7 +30,7 @@ export const Featured = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>Welcome to Traveler</b> Discover places and creative plans
+      <b>  Welcome to WonderWise</b> Discover places and creative plans
       </h1>
       {error && <p className={styles.error}>{error}</p>}
       {highestViewedPost && (
