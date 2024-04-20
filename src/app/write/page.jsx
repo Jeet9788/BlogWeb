@@ -13,7 +13,8 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "./../../utils/firebase";
-import dynamic from "next/dynamic"
+import dynamic from "next/dynamic";
+
 // import ReactQuill from "react-quill";
 
 const WritePage = () => {
