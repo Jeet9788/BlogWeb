@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node prebuild.js",
-    "build": "npx prisma generate && next build ",
+    "build": "prisma generate && cp -R node_modules/.prisma/client ./build && next build ",
     "start": "next start",
     "lint": "next lint"
   },
